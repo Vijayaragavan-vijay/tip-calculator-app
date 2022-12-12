@@ -24,7 +24,7 @@ Mobile view:
 
 ### Links
 
-- Solution URL: [solution](https://your-solution-url.com)
+- Solution URL: [solution](https://www.frontendmentor.io/solutions/tip-calculator-app-vLQ2qykLov)
 - Live Site URL: [live site URL](https://storied-kataifi-22ccda.netlify.app/)
 
 ## My process
@@ -36,3 +36,21 @@ Mobile view:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+
+### What I learned
+
+    I struggled a lot to complete this challenge, especially designing for mobile view, I had used position as Absolute , Relative for Container since then gets messy while using Virtual Keypad. Finally I sorted out by giving position as  Default(Static) and align it using margins and padding.
+    
+    
+```js
+function calculateTip(buttonvalues, billvalue, personvalue) {
+    let tips = (billvalue * (buttonvalues / 100)) / personvalue;
+    let totalamount = (billvalue / personvalue) + (tips);
+    tipperperson.innerHTML = "$" + tips.toFixed(2);
+    totalperperson.innerHTML = "$" + totalamount.toFixed(2);
+}
+```
+## Author
+- Frontend Mentor - [@Vijayaragavan](https://www.frontendmentor.io/profile/vijayaragavankts)
+    
+
