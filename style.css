@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+    user-select: none;
+}
+
+:root {
+    --strong_cyan: hsl(172, 67%, 45%);
+    --verydarkcyan: hsl(183, 100%, 15%);
+    --Darkgrayishcyan: hsl(186, 14%, 43%);
+    --Grayishcyan: hsl(184, 14%, 56%);
+    --Lightgrayishcyan: hsl(185, 41%, 84%);
+    --Verylightgrayishcyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--Lightgrayishcyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 160px; */
+    /* position: relative; */
+}
+
+.logo {
+    margin-top: 160px;
+    margin-bottom: 85px;
+    /* margin: auto; */
+    /* position: absolute; */
+}
+
+#container {
+    /* position: absolute; */
+    position: relative;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin: auto;
+    border-radius: 20px;
+    margin-bottom: 240px;
+    /* margin-top: 320px; */
+    height: 480px;
+    width: 930px;
+    background-color: var(--White);
+}
+
+#container>form {
+    margin-left: 47px;
+}
+
+#container form input {
+    height: 45px;
+    background-color: var(--Verylightgrayishcyan);
+    outline: none;
+    border: none;
+    text-align: right;
+    padding-right: 20px;
+    border-radius: 6px;
+    font-size: 24px;
+}
+
+#bill {
+    position: absolute;
+    top: 40px;
+    /* margin-top: 20px; */
+    color: var(--Darkgrayishcyan);
+}
+
+#amount {
+    position: absolute;
+    top: 70px;
+    width: 375px;
+    padding-right: 12px;
+    color: var(--verydarkcyan);
+}
+
+#amount:focus {
+    border: 2px solid var(--strong_cyan);
+}
+
+#dollorSymbol {
+    position: absolute;
+    margin-left: 18px;
+    margin-top: 60px;
+}
+
+#tiplabel {
+    position: absolute;
+    top: 150px;
+    color: var(--Darkgrayishcyan);
+}
+
+.btn {
+    position: absolute;
+    width: 115px;
+    text-align: center;
+    background-color: var(--verydarkcyan);
+    color: var(--White);
+    border: none;
+    height: 45px;
+    font-size: 24px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn1 {
+    top: 185px;
+}
+
+#btn2 {
+    top: 185px;
+    margin-left: 128px;
+}
+
+#btn3 {
+    top: 185px;
+    margin-left: 256px;
+}
+
+#btn4 {
+    top: 245px;
+}
+
+#btn5 {
+    top: 245px;
+    margin-left: 128px;
+}
+
+#btn1:hover,
+#btn2:hover,
+#btn3:hover,
+#btn4:hover,
+#btn5:hover {
+    background-color: hsl(183, 100%, 10%);
+}
+
+#btn1:focus,
+#btn2:focus,
+#btn3:focus,
+#btn4:focus,
+#btn5:focus {
+    background-color: var(--strong_cyan);
+    color: var(--verydarkcyan);
+}
+
+#custom {
+    position: absolute;
+    width: 115px;
+    text-align: center;
+    color: var(--White);
+    border: none;
+    height: 45px;
+    font-size: 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    top: 245px;
+    margin-left: 256px;
+    background-color: var(--Verylightgrayishcyan);
+    color: var(--verydarkcyan);
+    padding-right: 10px !important;
+}
+
+#custom:focus {
+    border: 2px solid var(--strong_cyan);
+}
+
+#count #noofpeople {
+    position: absolute;
+    top: 340px;
+    color: var(--Darkgrayishcyan);
+}
+
+#peoplecount {
+    position: absolute;
+    height: 45px;
+    background-color: var(--Verylightgrayishcyan);
+    outline: none;
+    padding-right: 12px;
+    border: none;
+    text-align: right;
+    padding-right: 20px;
+    border-radius: 6px;
+    font-size: 24px;
+    top: 375px;
+    width: 375px;
+    color: var(--verydarkcyan);
+}
+
+#peoplecount:focus {
+    border: 2px solid var(--strong_cyan)
+}
+
+#count p {
+    position: absolute;
+    top: 340px;
+    width: 374px;
+    text-align: right;
+}
+
+#count #counterr {
+    color: red;
+    display: none;
+}
+
+#count .error {
+    border: 2px solid red;
+}
+
+#personimg {
+    position: absolute;
+    top: 390px;
+    margin-left: 18px;
+}
+
+#showtip {
+    position: absolute;
+    /* margin-top: 28px; */
+    margin-top: 0;
+    width: 410px;
+    height: 410px;
+    left: 478px;
+    transform: translateY(-36px);
+    border-radius: 15px;
+    background-color: var(--verydarkcyan);
+}
+
+#showtip #tip {
+    position: absolute;
+    margin-left: 35px;
+}
+
+#showtip #tip #tipPrice {
+    position: absolute;
+    width: 300px;
+    margin-top: 60px;
+    color: var(--Verylightgrayishcyan);
+}
+
+#showtip #tip .person {
+    position: absolute;
+    width: 200px;
+    margin-top: 85px;
+    color: var(--Grayishcyan);
+}
+
+#showtip #tip #tipamount {
+    position: absolute;
+    left: 175px;
+    top: 55px;
+    color: var(--strong_cyan);
+    font-size: 45px;
+}
+
+#showtip #total {
+    position: absolute;
+    margin-left: 35px;
+}
+
+#showtip #total #totalPrice {
+    position: absolute;
+    width: 300px;
+    margin-top: 180px;
+    color: var(--Verylightgrayishcyan);
+}
+
+#showtip #total .person2 {
+    position: absolute;
+    width: 200px;
+    margin-top: 210px;
+    color: var(--Grayishcyan);
+}
+
+#showtip #total #totalamount {
+    position: absolute;
+    left: 175px;
+    top: 170px;
+    color: var(--strong_cyan);
+    font-size: 45px;
+}
+
+#showtip .but {
+    width: 330px;
+    height: 45px;
+    border: none;
+    outline: none;
+    user-select: none;
+    position: absolute;
+    margin-left: 40px;
+    cursor: pointer;
+    top: 320px;
+    font-size: 26px;
+    color: var(--verydarkcyan);
+    /* color: white; */
+    border-radius: 5px;
+    /* background-color: hsl(183, 100%, 20%); */
+    background-color: var(--strong_cyan);
+}
+
+#showtip .but:hover {
+    background-color: hsl(172, 67%, 34%);
+}
+
+
+/* Media query */
+
+@media screen and (max-width:420px) {
+    .logo {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    #container {
+        position: static;
+        display: flex;
+        width: 360px;
+        height: 750px;
+        margin-bottom: 20px;
+        padding-right: 0px;
+    }
+    #amount {
+        width: 320px;
+    }
+    .btn {
+        width: 140px;
+    }
+    #btn1 {
+        top: 185px;
+    }
+    #btn2 {
+        top: 185px;
+        margin-left: 163px;
+    }
+    #btn3 {
+        top: 245px;
+        margin-left: 0px;
+    }
+    #btn4 {
+        top: 245px;
+        margin-left: 163px;
+    }
+    #btn5 {
+        top: 305px;
+        margin-left: 0px;
+    }
+    #custom {
+        width: 140px;
+        top: 305px;
+        margin-left: 163px;
+    }
+    #noofpeople {
+        margin-top: 30px;
+        margin-left: -15px;
+    }
+    #peoplecount {
+        margin-top: 30px;
+        margin-left: -15px;
+        width: 320px;
+    }
+    #counterr {
+        margin-top: 30px;
+        margin-left: -65px;
+    }
+    #personimg {
+        margin-top: 30px;
+        margin-left: 5px;
+    }
+    #bill,
+    #amount {
+        transform: translateY(155px);
+    }
+    #dollorSymbol {
+        transform: translateY(-26px);
+    }
+    #tiplabel {
+        transform: translateY(140px);
+    }
+    .btn,
+    #custom {
+        transform: translateY(140px);
+    }
+    #noofpeople,
+    #peoplecount,
+    #counterr,
+    #personimg {
+        transform: translateY(140px);
+    }
+    #bill,
+    #amount,
+    #btn1,
+    #btn3,
+    #btn5,
+    #tiplabel {
+        margin-left: -20px;
+    }
+    #dollorSymbol {
+        margin-left: 5px;
+    }
+    #showtip {
+        position: static;
+        /* left: -18px; */
+        width: 330px;
+        height: 240px;
+        margin-top: 500px;
+        margin-right: 30px
+        /* top: 70%; */
+        /* margin-left: 27px; */
+        /* margin-bottom: 200px; */
+    }
+    #showtip #tip #tipPrice {
+        margin-top: 20px;
+        width: 100px;
+    }
+    #showtip #tip .person {
+        margin-top: 50px;
+        width: 100px;
+    }
+    #showtip #tip #tipamount {
+        font-size: 28px;
+        transform: translateX(-45px) translateY(-30px);
+    }
+    #showtip #total #totalPrice {
+        transform: translateY(-80px);
+        width: 100px;
+    }
+    #showtip #total .person2 {
+        transform: translateY(-80px);
+        width: 100px;
+    }
+    #showtip #total #totalamount {
+        font-size: 28px;
+        transform: translateX(-45px) translateY(-70px);
+    }
+    .but {
+        position: absolute;
+        transform: translateX(-36px) translateY(-150px);
+        width: 220px !important;
+        left: 10%;
+    }
+}

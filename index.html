@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Tip calculator app</title>
+
+
+</head>
+
+<body>
+    <header class="logo">
+        <img src="images/logo.svg" alt="">
+    </header>
+    <div id="container">
+        <form>
+            <label id="bill">Bill</label><br>
+            <input type="number" id="amount" placeholder="0">
+            <img src="images/icon-dollar.svg" alt="-" id="dollorSymbol">
+            <label id="tiplabel">Select Tip %</label><br>
+            <button class="btn" id="btn1" value="5">5%</button>
+            <button class="btn" id="btn2" value="10">10%</button>
+            <button class="btn" id="btn3" value="15">15%</button>
+            <button class="btn" id="btn4" value="25">25%</button>
+            <button class="btn" id="btn5" value="50">50%</button>
+            <input type="number" class="custom" id="custom" placeholder="Custom">
+
+            <div id="count" class="count">
+                <label id="noofpeople">Number of People</label><br>
+                <input type="number" id="peoplecount" placeholder="1">
+                <p id="counterr">Error</p>
+                <img id="personimg" src="images/icon-person.svg" alt="">
+            </div>
+        </form>
+        <aside id="showtip">
+            <div id="tip">
+                <p id="tipPrice">Tip Amount</p>
+                <p class="person">/ person</p>
+                <p id="tipamount">$0.00</p>
+            </div>
+            <div id="total">
+                <p id="totalPrice">Total</p>
+                <p class="person2">/ person</p>
+                <p id="totalamount">$0.00</p>
+            </div>
+            <button class="but" id="but">Reset</button>
+        </aside>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
