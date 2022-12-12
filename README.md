@@ -39,7 +39,7 @@ Mobile view:
 
 ### What I learned
 
-    I struggled a lot to complete this challenge, especially designing for mobile view, I had used position as Absolute , Relative for Container since then gets messy while using Virtual Keypad. Finally I sorted out by giving position as  Default(Static) and align it using margins and padding.
+I struggled a lot to complete this challenge, especially designing for mobile view, I had used position as Absolute , Relative for Container since then gets messy while using Virtual Keypad. Finally I sorted out by giving position as  Default(Static) and align it using margins and padding.
     
     
 ```js
